@@ -8,51 +8,38 @@
     <meta property="og:image" content="https://ausiohx.github.io/Reborn1stConcert/img/thumbnail.png">
     <meta property="og:url" content="https://ausiohx.github.io/Reborn1stConcert/">
     <meta name="twitter:card" content="summary_large_image">
+    <title>REBORN 첫 번째 공연에 당신을 초대합니다.</title>
     <style>
-        body {
+        .button {
+            position: absolute;
+            width: 157px;
+            height: 46px;
+            flex-shrink: 0;
             display: flex;
-            justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+
+        /* 두 번째 버튼 위치 설정 */
+        .button-1 {
+            top: 4384px;
+            left: 33px;
         }
-        @media (max-width: 375px) {
-            img {
-                width: 100%;
-            }
-        }
-        @media (min-width: 375px) {
-            img {
-                width: auto;
-                max-width: 100%;
-            }
+
+        .button-2 {
+            top: 4384px;
+            left: 200px;
         }
     </style>
-    <title>REBORN의 첫 번째 공연에 당신을 초대합니다</title>
 </head>
 <body>
+    <svg width="375" height="5293" xmlns="http://www.w3.org/2000/svg">
+        <image href="img/Reborn1stConcertInviation.svg" width="375" height="5293" />
+    </svg>
 
-<!-- 이미지 부분 -->
-<img src="img/invitation.png" alt="Figma Design" usemap="#image-map" width="375" height="5293">
-
-<!-- 이미지맵 -->
-<map name="image-map">
-    <!-- 첫 번째 지도 열기 링크 -->
-    <area shape="rect" coords="26,4377.5,183,4423.5" href="https://naver.me/5Q3LlLFU" alt="네이버 지도로 보기">
-    
-    <!-- 두 번째 지도 열기 링크 -->
-    <area shape="rect" coords="192,4377.5,349,4423.5" href="https://kko.to/NTc_fqXjdZ" alt="카카오맵으로 보기">
-</map>
-<!-- image-map-resizer 라이브러리 추가 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
-<script>
-    window.onload = function() {
-        imageMapResize();
-    };
-</script>
+    <a href="https://naver.me/5Q3LlLFU" class="button button-1" target="_blank"></a>
+    <a href="https://kko.to/NTc_fqXjdZ" class="button button-2" target="_blank"></a>
 </body>
 </html>
