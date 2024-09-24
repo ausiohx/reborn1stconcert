@@ -9,7 +9,6 @@
     <meta property="og:url" content="https://ausiohx.github.io/Reborn1stConcert/">
     <meta name="twitter:card" content="summary_large_image">
     <style>
-        /* 기본적으로 이미지를 가운데 정렬 */
         body {
             display: flex;
             justify-content: center;
@@ -17,22 +16,16 @@
             min-height: 100vh;
             margin: 0;
         }
-
-        /* 기본적으로 이미지가 원래 크기 */
         img {
             max-width: 100%;
             height: auto;
         }
-
-        /* iPad 크기 이하에서는 이미지를 화면에 꽉 채우기 */
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             img {
                 width: 100%;
             }
         }
-
-        /* 더 큰 화면에서는 이미지가 원래 크기를 유지하고 가운데 정렬 */
-        @media (min-width: 769px) {
+        @media (min-width: 375px) {
             img {
                 width: auto;
                 max-width: 100%;
