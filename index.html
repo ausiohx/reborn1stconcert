@@ -2,41 +2,70 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reborn 1st Concert</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .invitation {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
             text-align: center;
         }
-
-        img {
+        .invitation img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+        }
+        .map-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .map-container img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 0;
         }
     </style>
 
-    <!-- 필수 Open Graph 메타 태그 -->
     <meta property="og:title" content="REBORN의 첫 번째 공연에 초대합니다" />
     <meta property="og:description" content="2024. 10. 23.(수) 18:00 배니합주실" />
     <meta property="og:image" content="img/thumbnail.png" />
     <meta property="og:url" content="https://ausiohx.github.io/Reborn1stConcert/" />
     <meta property="og:type" content="website" />
-  
-    <!-- 카카오톡에서 썸네일 크기를 맞추기 위해 추가 -->
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    
 </head>
 <body>
-    
-<img src="img/invitationImage.png" usemap="#image-map">
 
-    <map name="image-map">
-    <area target="_blank" alt="네이버 지도로 보기" title="네이버 지도로 보기" href="https://naver.me/xucEST5Z" coords="77,13136,546,13272" shape="rect">
-    <area target="_blank" alt="카카오맵으로 보기" title="카카오맵으로 보기" href="https://kko.kakao.com/vLJK8rTM2h" coords="571,13138,1042,13274" shape="rect">
-</map>
+    <div class="invitation">
+        <!-- 초대장 이미지 -->
+        <img src="img/invitationImage.png" alt="공연 초대장">
+
+        <!-- 지도 링크 이미지 -->
+        <div class="map-container">
+            <a href="https://map.kakao.com/?urlX=503980.0&amp;urlY=1150399.0&amp;name=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%B6%81%EA%B5%AC%20%EC%82%BC%EA%B0%81%EC%82%B0%EB%A1%9C%20123-1&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                <img src="http://t1.daumcdn.net/roughmap/imgmap/76a86fd44ec64698e93b49f083ee5604be053aa5234b27c0983c2f6464b25eea" alt="공연 장소 지도">
+            </a>
+        </div>
+
+        <!-- 아래쪽 이미지 -->
+        <img src="img/invitationImage2.png" alt="기타 정보">
+    </div>
+
 </body>
 </html>
